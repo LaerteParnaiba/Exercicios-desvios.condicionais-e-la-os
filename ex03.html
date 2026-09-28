@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 03 js</title>
+</head>
+<body>
+
+    <script>
+        const valor_vendido = Number(prompt("digite o valor vendido no pelo representante em R$"));
+        const meta = Number(prompt("informe a meta da empresa em R$."));
+        
+        
+            let atingiu = valor_vendido>=meta;
+            let superou = valor_vendido>meta;
+            let bateu_exatamente = valor_vendido===meta;
+            let nao_bateu = meta>valor_vendido;
+            let diferença = valor_vendido-meta;
+            if(valor_vendido>=meta){
+            alert(`Vendido: ${valor_vendido} | meta: ${meta}\n`+
+            `Atingiu a meta? ${atingiu}\n`+
+            `Superou a meta? ${superou}\n`+
+            `Bateu exatamente: ${bateu_exatamente}\n`+
+            `Diferença : ${diferença}`)
+            };
+            if(meta>valor_vendido){
+            alert(`Vendido: ${valor_vendido} | meta: ${meta}\n`+
+            `Atingiu a meta? ${atingiu}\n`+
+            `Superou a meta? ${superou}\n`+
+            `Bateu exatamente: ${bateu_exatamente}\n`+
+            `Valor faltante: ${diferença*(-1)}`)    
+            };
+            
+            
+           
+                
+            
+          
+        
+
+    </script>
+    
+</body>
+</html>

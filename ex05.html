@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 05</title>
+</head>
+<body>
+    
+
+
+
+
+
+
+    <script>
+       const valor_compra = Number(prompt("informe o valor da comprar em R$"));
+       const gratis_frete = 150.00;
+
+       let frete_gratis = valor_compra>= 150.00;
+
+       let mensagem = frete_gratis ? "você tem frete grátis" : "Você não tem frete grátis kkkkkkkkkkkkkk";
+
+       if(!frete_gratis){
+        alert(`${mensagem}.\n`+
+            `Você precisa comprar  mais ${gratis_frete - valor_compra} R$ Para obter frete grátis`);
+        
+       }
+       else{
+           alert(mensagem);
+       }
+
+
+
+    </script>
+</body>
+</html>

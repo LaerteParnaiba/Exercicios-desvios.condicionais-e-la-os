@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 04 js</title>
+</head>
+<body>
+
+
+
+    <script>
+        const idade = 25;
+        const IsMaior = idade>=18;
+        const isMenor = idade<18;
+        let possui_convite = false;
+
+        
+        if(possui_convite && IsMaior){
+            alert(`idade: ${idade}, com convite\n`+
+                `--> permitida!`)
+                
+        }
+        else if(possui_convite && isMenor){
+            alert(`idade: ${idade}, com convite\n`+
+                `--> menor de idade!`)
+        }
+        else if(!possui_convite && IsMaior){
+            alert(`idade ${idade},\n`+
+                `Sem convite!`)
+            
+        }
+        else {
+            alert(`idade: ${idade},sem convite!`)
+        };
+    
+        
+    </script>
+</body>
+</html>
